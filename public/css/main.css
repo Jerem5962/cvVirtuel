@@ -1,12 +1,26 @@
 .little-jump:hover {
-    animation-duration: 0.5s;
     animation-name: little-jump;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    color: lightslategray;
 }
 
-.test {
+.slide {
     position: relative;
     animation-name: left-right;
     animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.strombo {
+    animation-name: strombo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.ulahop {
+    animation-name: ulahop;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
 }
 
@@ -16,13 +30,13 @@
         margin-left: 0;
     }
     0%, 100% {
-        transform: translateY(-25%);
+        transform: translateY(-15%);
     }
     to {
       margin-left: 0%;
     }
     50% {
-        transform: translateY(25%);
+        transform: translateY(15%);
     }
 }
 
@@ -31,12 +45,35 @@
         left: 0;
     }
     50% {
-        left: 70%;
+        left: 100%;
         font-size: 200%;
         color: rgb(110, 193, 250);
         transform: translateY(+300%);
     }
     to {
         left: 0;
+    }
+}
+
+@keyframes strombo {
+    from {
+    }
+    50% {
+        color:white;
+    }
+    to {
+        
+    }
+}
+
+@keyframes ulahop {
+    from {
+        background: linear-gradient(to left,#A7F3D0,#BFDBFE)
+    }
+    50% {
+        background: linear-gradient(to left,#BFDBFE, #A7F3D0)
+    }
+    to {
+        background: linear-gradient(to left,#A7F3D0,#BFDBFE)
     }
 }
