@@ -1,0 +1,42 @@
+.little-jump:hover {
+    animation-duration: 0.5s;
+    animation-name: little-jump;
+}
+
+.test {
+    position: relative;
+    animation-name: left-right;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes little-jump {
+    from {
+        margin-left: 0;
+    }
+    0%, 100% {
+        transform: translateY(-25%);
+    }
+    to {
+      margin-left: 0%;
+    }
+    50% {
+        transform: translateY(25%);
+    }
+}
+
+@keyframes left-right {
+    from {
+        left: 0;
+    }
+    50% {
+        left: 70%;
+        font-size: 200%;
+        color: rgb(110, 193, 250);
+        transform: translateY(+300%);
+    }
+    to {
+        left: 0;
+    }
+}
