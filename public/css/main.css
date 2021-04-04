@@ -30,15 +30,16 @@
         margin-left: 0;
     }
     0%, 100% {
-        transform: translateY(-15%);
+        transform: translateX(-5%);
     }
     to {
       margin-left: 0%;
     }
     50% {
-        transform: translateY(15%);
+        transform: translateX(5%);
     }
 }
+
 
 @keyframes left-right {
     from {

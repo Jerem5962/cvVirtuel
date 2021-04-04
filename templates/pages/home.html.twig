@@ -2,9 +2,11 @@
 {% block title %}{{ parent()}}Home{% endblock %}
 
 {% block body %}
-<div class="ulahop p-4 m-4 bg-gradient-to-r w-2/4 bg-white shadow overflow-hidden sm:rounded-lg">
+
+<div class="flex">
+  <div class="bg-gradient-to-r from-green-200 to-blue-200 p-4 m-4 w-2/4 shadow overflow-hidden sm:rounded-lg">
     <div class="text-center px-4 py-5 sm:px-6">
-      <h3 class="strombo text-lg leading-6 font-bold text-gray-900">
+      <h3 class="text-lg leading-6 font-bold text-gray-900">
         Plaque d'information
       </h3>
     </div>
@@ -79,4 +81,28 @@
       </dl>
     </div>
   </div>
+
+  <div class="bg-gradient-to-r from-green-200 to-blue-200 card p-4 m-4 m-auto w-2/4 shadow sm:rounded-lg">
+    <div class="card_content text-center">
+      <h2 class="text-lg font-medium">Vous recherchez un développeur ?</h2>
+      <br>
+      <p>
+        Je suis actuellement en alternance et je recherche une entreprise qui souhaite intégrer au sein de ses équipes
+        un nouveau développeur motivé.
+      </p>
+      <br>
+      <p>
+        <span class="strombo text-black text-xl">Disponible à tout moment</span> et pour tout type de contrat, je suis ouvert à vos propositions. Je ne demande pas un salaire élevé
+        car j'ai encore beaucoup à apprendre et je suis consciens qu'il est difficile en ces temps d'investir dans le long terme.
+      </p>
+      <br>
+      <p>
+        Je suis principalement intéressé par les postes "backend". Peu importe la technologie, j'ai appris à apprendre. Je maitrise
+        Symfony/PHP/TWIG et j'ai des connaissances en JS.
+      </p>
+    </div>
+  </div>
+</div>
+
+
 {% endblock %}
