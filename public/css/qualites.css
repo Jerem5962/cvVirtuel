@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+.cards {
+    margin: 100px 50px;
+    text-align: center;
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+    /*top: 420px;*/
+    margin: 20px 20px;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    height: auto;
+}
+
+.card:hover .card_img img {
+    opacity: 0.6;
+    transform: scale(1.2);
+}
+
+.card_title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card_img{
+    background-color: #000;
+    height: 200px;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+.card:hover .card_img {
+    height: 50px;
+}
+
+.card img {
+    margin: auto;
+    opacity: 1;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: scale(1);
+}
+
+.card_body {
+    position: relative;
+    padding: 20px;
+    height: 50px;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+
+.card:hover .card_body {
+    /*height: auto;*/
+    height: 200px;
+    top: 0;
+}
+
+.card_description {
+    text-align: center;
+    line-height: 25px;
+    margin: 0;
+    padding: 0;
+}
+

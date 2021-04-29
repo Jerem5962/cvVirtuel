@@ -16,9 +16,9 @@
             {#{{ encore_entry_script_tags('app') }}#}
         {% endblock %}
     </head>
-    <body class="flex flex-col justify-between min-h-screen font-mono bg-purple-100">
+    <body class="min-h-screen font-mono bg-purple-100 text-xl">
 
-        <header class="w-full flex flex-col">
+        <header class="w-full flex flex-col justify-between">
 
             <div class="bg-gradient-to-r from-green-200 to-blue-800 py-6 flex flex-row justify-around w-screen">
                 <div class="inset-x-1/4">
@@ -34,25 +34,37 @@
 
             <nav class=" w-1/2 ">
                 <ul class="w-100 flex flex-row justify-around">
-                    <li class="little-jump font-bold text-center bg-gradient-to-r from-green-200 to-blue-200 w-1/3 rounded-b-3xl">
-                        <a href="" class="">CV</a>
-                    </li>
-                    <li class="little-jump font-bold text-center bg-gradient-to-r from-green-200 to-blue-200 w-1/3 rounded-b-3xl">
-                        <a href="">Expériences</a>
-                    </li>
-                    <li class="little-jump font-bold text-center bg-gradient-to-r from-green-200 to-blue-200 w-1/3 rounded-b-3xl">
-                        <a href="">Formations</a>
-                    </li>
+                    <a href="{{ path("home") }}" class="little-jump font-bold text-center bg-gradient-to-r from-green-200 to-blue-200 w-1/3 rounded-b-3xl">
+                        <li>
+                            Home
+                        </li>
+                    </a>
+                    <a href="{{ path("cv") }}" class="little-jump font-bold text-center bg-gradient-to-r from-green-200 to-blue-200 w-1/3 rounded-b-3xl">
+                        <li>
+                            CV
+                        </li>
+                    </a>
+                    <a href="{{ path("qualites") }}" class="little-jump font-bold text-center bg-gradient-to-r from-green-200 to-blue-200 w-1/3 rounded-b-3xl">
+                        <li>
+                            Qualités
+                        </li>
+                    </a>
+                    <a href="" class="little-jump font-bold text-center bg-gradient-to-r from-green-200 to-blue-200 w-1/3 rounded-b-3xl">
+                        <li>
+                            Contact
+                        </li>      
+                    </a>
+                    
                 </ul>
             </nav>
 
         </header>
-
-        <main class="mt-12">
+        
+        <main class="block mt-12">
            {% block body %}{% endblock %} 
         </main>
 
-        <footer class="bg-green-300 my-6">
+        <footer class="bg-green-200 my-6">
             <p class="text-center">&copy; Copyright <span>2021</span></p>
         </footer>
 

@@ -1,0 +1,84 @@
+{% extends "base.html.twig" %}
+{% block title %}{{ parent()}}Qualités{% endblock %}
+{% block stylesheets %}
+{{ parent() }}
+<link rel="stylesheet" href="{{ asset("/css/qualites.css") }}">
+{% endblock %}
+
+{% block body %}
+<section class="cards">
+    <article class="card w-1/4">
+        <header class="card_img">
+            <img class="w-full" src="{{ asset("images/determination.jfif") }}" alt="determiné">
+        </header>
+        <div class="card_body">
+            <div class="card_title">Déterminé</div>
+            <p class="card_description">
+                Ne baisse jamais les bras, chaque problème à sa solution. La limite c'est le temps.
+            </p>
+        </div>
+    </article>
+
+    <article class="card w-1/4">
+        <header class="card_img">
+            <img class="w-full" src="{{ asset("images/sociable.jfif") }}" alt="sociable">
+        </header>
+        <div class="card_body">
+            <div class="card_title">Sociable</div>
+            <p class="card_description">
+                J'aime l'esprit d'équipe, l'échange de connaissance et le tout dans une ambiance joyeuse.
+            </p>
+        </div>
+    </article>
+
+    <article class="card w-1/4">
+        <header class="card_img">
+            <img class="w-full" src="{{ asset("images/optimiste.jfif") }}" alt="optimiste">
+        </header>
+        <div class="card_body">
+            <div class="card_title">Optimiste</div>
+            <p class="card_description">
+                Je préfére voir le verre à moitié plein qu'à moitié vide. L'optimisme réduit le stress et l'angoisse.
+            </p>
+        </div>
+    </article>
+
+    <article class="card w-1/4">
+        <header class="card_img">
+            <img class="w-full" src="{{ asset("images/curiosite.jfif") }}" alt="curiosité">
+        </header>
+        <div class="card_body">
+            <div class="card_title">Curieux</div>
+            <p class="card_description">
+                Regarder le code des autres et m'informer sur les nouveautés me permette de rester au goût du jour.
+            </p>
+        </div>
+    </article>
+
+    <article class="card w-1/4">
+        <header class="card_img">
+            <img class="w-full" src="{{ asset("images/passione.jfif") }}" alt="passioné">
+        </header>
+        <div class="card_body">
+            <div class="card_title">Passioné</div>
+            <p class="card_description">
+                Geek depuis la naissance, les nouvelles technologies ont toujours fait partis de moi.
+            </p>
+        </div>
+    </article>
+
+    <article class="card w-1/4">
+        <header class="card_img">
+            <img class="w-full" src="{{ asset("images/ambitieux.jfif") }}" alt="ambitieux">
+        </header>
+        <div class="card_body">
+            <div class="card_title font-bold">Ambitieux</div>
+            <p class="card_description">
+                J'aime beaucoup entreprendre, donner des idées pour faire avancer les projets.
+            </p>
+        </div>
+    </article>
+
+</section>
+    
+{% endblock %}

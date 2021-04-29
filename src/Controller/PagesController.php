@@ -15,4 +15,20 @@ class PagesController extends AbstractController
     {
         return $this->render("pages/home.html.twig");
     }
+
+    /**
+     * @Route("/curriculum", name="cv")
+     */
+    public function curriculum()
+    {
+        return $this->render("pages/cv.html.twig");
+    }
+
+    /**
+     * @Route("/qualites", name="qualites")
+     */
+    public function qualites()
+    {
+        return $this->render("pages/qualites.html.twig");
+    }
 }
